@@ -10,10 +10,6 @@ const action = async () => {
   }
 
   data = await Promise.all(data);
-
-  if (data && data.length < length) {
-    await action();
-  }
 };
 
 module.exports = action;
